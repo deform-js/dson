@@ -1,7 +1,7 @@
 var DSON = {};
 
-var $$TYPES = DSON.$$types = [];
-var $$MAP = DSON.$$map = Object.create(null);
+DSON.$$types = [];
+DSON.$$map = Object.create(null);
 
 function merge(a, b) {
 	for(var i in b) {
@@ -139,7 +139,7 @@ function reconstruct(prop, value) {
 
 	// console.log('key:', key, 'value:', value);
 
-	if (!$RE.test(key) || !(type = $$MAP[key])) return value;
+	if (!$RE.test(key) || !(type = DSON.$$map[key])) return value;
 
 	var data = value[key];
 

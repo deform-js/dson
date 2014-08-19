@@ -20,5 +20,8 @@
   "bugs": {
     "url": "https://github.com/deform-js/dson/issues"
   },
-  "homepage": "https://github.com/deform-js/dson"
+  "homepage": "https://github.com/deform-js/dson",
+  "devDependencies": {
+    "chai": "^1.9.1"
+  }
 }
